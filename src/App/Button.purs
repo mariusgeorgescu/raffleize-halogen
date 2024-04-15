@@ -10,7 +10,9 @@ module App.Button
   ) where
 
 import Prelude
+
 import Cardano.Wallet.Cip30 (Api, enable, getBalance)
+import Contract.CborBytes (hexToCborBytesUnsafe)
 import Contract.Prelude (Maybe(..))
 import Data.String (take)
 import Effect.Aff.Class (class MonadAff)
@@ -87,7 +89,8 @@ handleAction = case _ of
   ConnectWallet wallet -> do
     api <- liftAff $ enable wallet [ { cip: 30 } ]
     b <- liftAff $ getBalance api
-    H.modify_ \st -> st { connectedWallet = Just { api: api, name: wallet, balance: b } }
+    let b2 = hexToCborBytesUnsafe b
+    H.modify_ \st -> st { connectedWallet = Just { api: api, name: wallet, balance: (show b2) } }
 
 printConnectedWallet :: Maybe ConnectedWallet -> String
 printConnectedWallet mw = case mw of

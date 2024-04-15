@@ -3400,11 +3400,11 @@
         "utils": "utils_50"
       },
       "locked": {
-        "lastModified": 1709570339,
-        "narHash": "sha256-VE7/B1zzxaVBEhkpBUXK98DXb19rKYOIKQ4pyS4S2BY=",
+        "lastModified": 1710168018,
+        "narHash": "sha256-pvQPOrlM9X+u5PDqvu4StBup3dVDh3k/Dc1JTualyDY=",
         "owner": "LovelaceAcademy",
         "repo": "ctl-nix",
-        "rev": "82a0f89d20e914b21a58de815b3700d6f8960f25",
+        "rev": "c7903b1e1ba8b2733344bc3ed8aa6d76cf8f9878",
         "type": "github"
       },
       "original": {
@@ -15096,11 +15096,11 @@
     },
     "nixpkgs_148": {
       "locked": {
-        "lastModified": 1710036095,
-        "narHash": "sha256-joYx0arQtHM/7VhUY5ByP+jlf8XeJkK2fBdri8vK918=",
+        "lastModified": 1713128889,
+        "narHash": "sha256-aB90ZqzosyRDpBh+rILIcyP5lao8SKz8Sr2PSWvZrzk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f592a7ea771bc3c417f7e3026af615d0c6be84ce",
+        "rev": "2748d22b45a99fb2deafa5f11c7531c212b2cefa",
         "type": "github"
       },
       "original": {
@@ -16989,6 +16989,22 @@
         "type": "github"
       }
     },
+    "npmlock2nix_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1673447413,
+        "narHash": "sha256-sJM82Sj8yfQYs9axEmGZ9Evzdv/kDcI9sddqJ45frrU=",
+        "owner": "nix-community",
+        "repo": "npmlock2nix",
+        "rev": "9197bbf397d76059a76310523d45df10d2e4ca81",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "npmlock2nix",
+        "type": "github"
+      }
+    },
     "ogmios": {
       "flake": false,
       "locked": {
@@ -17797,11 +17813,11 @@
         "utils": "utils_52"
       },
       "locked": {
-        "lastModified": 1710069211,
-        "narHash": "sha256-7yCHWZlELSqJ/ZOjORYBMc65GNoHVdCUYqwqiwbFkDs=",
+        "lastModified": 1713185847,
+        "narHash": "sha256-9HfNkrXQehLbd3XXiw0ah8gPeeWG594Bt7J0JWYhBqU=",
         "owner": "mariusgeorgescu",
         "repo": "purs-nix",
-        "rev": "d4b58ecb080cee699b7535a5f0ff558025c6e673",
+        "rev": "7e9549ba60364c86c166adb4c0abf4641df869e1",
         "type": "github"
       },
       "original": {
@@ -18025,6 +18041,7 @@
         "ctl": "ctl",
         "ctl-nix": "ctl-nix",
         "nixpkgs": "nixpkgs_148",
+        "npmlock2nix": "npmlock2nix_2",
         "ps-tools": [
           "purs-nix",
           "ps-tools"
